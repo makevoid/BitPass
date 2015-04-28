@@ -1,0 +1,6 @@
+- if @error
+  %p= @error
+%form{action: "/", method: "post"}
+  %label Enter a URL:
+  %input{name: "url", size: "40", type: "url"}/
+  %input{type: "submit", value: "Shorten"}/
